@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    background-color: rgb(252, 206, 99);
+    height: 70px;
+    top: -70px;
+    transition: 0.6s;
+    z-index: 1;
+    opacity: 0.9;
+    }
+
+   #menu{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    width: 100%;
+    background-color: rgb(252, 206, 99);
+    position: fixed;
+    top: -300px;
+    z-index: 1;
+    transition: 1s ease-in-out;
+}
+
+.visible{
+    top: 0 !important; 
+}
+
+ .menu .navigation{
+    padding: 25px 0 0 10px;
+    width: 100%;
+}
+
+ .menu .navigation ul li {
+    margin-bottom: 10px;
+}
+
+ .menu .navigation ul li a {
+   text-decoration: none;
+   color: #000;
+}
+
+ .menu .navigation ul li a:hover {
+    color: rgba(73, 73, 73, 0.853);
+}
+
+.menu .navigation i{
+    margin-left: 5px;
+    font-size: 0.8rem;
+}
+
+ .menu .icon{
+   margin-top: 15px;
+}
+
+ .menu .icon span {
+     margin-right: 15px;
+    }
+    
+    .menu .icon span i{
+        font-size: 1.2rem;
+        padding: 14px;
+        text-align: center;
+        border-radius: 50%;
+        border: 1px solid white;
+        color: white;
+        text-align: center;
+}
+
+ button{
+    padding: 5px 20px;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    font-family: 'poppins',sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+ button:hover{
+    background-color: rgb(211, 211, 211);
+}
+
+header {
+    background: url(./images/headphone1.jpg)center/cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+header .burger{
+    position: fixed;
+    top: 0;
+    right: 20px;
+    font-size: 2.5rem;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+header .header{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    min-width: 250px;
+    max-width: 500px;
+}
+
+header .header h4{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+header .header h1 {
+    font-size: 8vh;
+    line-height: 70px;
+
+}
+
+header .header button{
+    padding: 15px 28px;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+    font-family: 'poppins',sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+
+header .header button:hover{
+    background-color: rgb(211, 211, 211);
+}
+
+section.one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+section.one .text{
+    width: 70%;
+}
+
+section.one .text h2{
+    letter-spacing: 3px;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+section.one .text p span {
+    font-weight: 800;
+}
+
+.middle {
+    background-color: rgb(252, 206, 99);
+    color: white;
+    height: 150px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.middle p{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+section.twoo{
+    padding: 100px 70px 50px;
+    display: flex; 
+     flex-direction: column; 
+     align-items: center; 
+     justify-content: center; 
+     width: 100%;
+}
+
+section.twoo h1{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #4b4b4b;
+    margin-bottom: 15px;
+}
+
+section.twoo .headphones-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    width: 100%;
+}
+
+section.twoo  .headphones-container .head-card{
+    position: relative;
+    margin-left: 30px;
+}
+
+section.twoo .headphones-container .head-card p{
+    position: absolute;
+    background-color: rgb(252, 206, 99);
+    padding: 5px 10px;
+    border-radius: 15px;
+    top: 20px;
+    left: 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+section.twoo  .headphones-container .head-card img{
+    width: 100%;
+}
+
+section.twoo  .headphones-container .description{
+    background-color: rgb(252, 206, 99);
+    height: 120px;
+    padding: 20px;
+    transform: translateY(-6px);
+    transition: 1.1s ease-in-out;
+} 
+
+section.twoo  .headphones-container .description:hover{
+    transform: translateY(-125px);
+    opacity: 0.7;
+}
+section.twoo  .headphones-container .description h3{
+    font-weight: 600;
+}
+
+section.twoo  .headphones-container .description h6{
+    font-size: 1rem;
+    font-weight: 300;
+    color: white;
+    margin-top: 11px;
+    width: 100%;
+}
+
+section.three{
+    padding: 100px 70px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.three h1{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #4b4b4b;
+    margin-bottom: 15px;
+}
+
+section.three .main-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px;
+}
+
+section.three .main-container div.photo{
+    position: relative;
+    width: 100%;
+}
+
+section.three .main-container div.photo img{
+    width: 100%;
+    transition: 0.3s;
+}
+
+section.three .main-container .hidden{
+    width: 100%;
+    opacity: 0;
+}
+
+section.three .main-container div.photo:hover .hidden{
+    opacity: 1;
+}
+
+section.three .main-container .hidden i{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-45%, -50%);
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 1.6em;
+    background-color: rgba(74, 73, 73, 0.611);
+    color: white;
+}
+
+section.three .main-container .hidden h6{
+    position: absolute;
+    bottom: 12%;
+    left: 8%;
+    font-size: 1.2rem;
+    color: white;
+}
+
+section.three .main-container div.photo:hover{
+    filter: brightness(80%);
+    color: white;
+}
+
+.like {
+    background-color: rgb(252, 206, 99);
+    display: grid;
+    grid-template-columns: 65% 35%;
+    padding: 35px 150px;
+    width: 100%;
+    align-items: center;
+}
+
+.like .offer{
+    align-items: center;
+    margin-left: 80px;
+    width: 100%;
+}
+
+.like .offer p{
+    color: rgba(245, 245, 245, 0.997);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.like .offer h1{
+    color: white;
+    margin-top: 20px;
+}
+
+.like button{
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 0 auto;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+}
+
+.like button:hover{
+    background-color: rgb(211, 211, 211);
+}
+
+section.four{
+    padding: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.four h1{
+    font-weight: 500;
+    font-size: 5vh;
+
+}
+
+section.four .cards-container{
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+section.four .cards-container .card-select{
+    width: 300px;
+}
+
+section.four .cards-container .card-select h1{
+    color: rgb(252, 206, 99);
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+section.four .cards-container .card-select span{
+    position: relative;
+    top: -60px;
+    left: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+section.four .cards-container .card-select .descript{
+    font-weight: 500;
+    color: rgb(95, 94, 94);
+    margin-bottom: 10px;
+}
+
+section.four .cards-container .card-select .learn{
+    color: rgb(252, 206, 99);
+    font-weight: 500;
+}
+
+section.four .cards-container .card-select .learn:hover{
+    color: rgb(195, 195, 195);
+}
+
+iframe{
+    min-width: 50%;
+    width: 100%;
+    height: 400px;
+}
+
+footer{
+    padding: 50px 30px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+footer i{
+    margin-right: 70px;
+    border-radius: 50%;
+    padding: 15px 15px;
+    background: rgb(252, 206, 99);
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+i.fa-facebook-f{
+    height: 50px;
+    width: 48px;
+}
+
+@media screen and (max-width: 1185px) {
+    header {
+        min-height: 50vh;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    header .header h1{
+        font-size: 5vh;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    section.twoo {
+        padding: 30px 30px 30px 20px ;
+    }
+
+    section.twoo .headphones-container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 850px){
+    section.twoo h1{
+        width: 50%;
+        text-align: center;
+        padding: 40px 30px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    section.twoo .headphones-container .head-card .description h6 {
+        margin-top: 5px;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 446px) {
+    section.twoo .headphones-container .head-card .description h6{
+        font-size: 0.8rem; 
+    }
+}
+
+@media screen and (max-width: 437px) {
+    section.three h1{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    section.three {
+        padding: 20px 0;
+    }
+
+    section.three .main-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .like{
+        padding: 25px 40px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .like .offer{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .like button{
+        font-size: 0.8rem;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .like .offer h1 p {
+        font-size: 1.1rem;
+    }
+
+    .like .offer h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    section.four{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 1096px) {
+    section.four h1{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 3.5vh;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .google-map iframe{
+        height: 260px;
+    }
+}
+@media screen and (max-width: 700px) {
+    footer {
+        padding: 20px 0;
+    }
+
+    footer .div-container i{
+        margin-right: 20px;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 483px) {
+    footer .div-container i {
+        font-size: 0.8rem;
+    }
+
+    footer .div-container i.fa-facebook-f{
+        height: 42px;
+        width: 42px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
